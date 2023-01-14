@@ -21,7 +21,7 @@ const Hero = () => {
               Fashion create good lifestyle
             </span>
             <p className="text-xl text-gray font-medium mt-12">
-           A world-class trendy fashion collections. An Indian designer well known for her-inspired designs. Mens's and women's optical styles.
+           A world-class trendy fashion collections. An Indian designer well known for her-inspired designs. Menss and womens optical styles.
             </p>
           
            <Link href="#products">

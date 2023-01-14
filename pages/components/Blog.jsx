@@ -11,7 +11,7 @@ const Blog = () => {
 		<div className="w-[80%] m-auto grid grid-cols-1  gap-x-12 gap-y-8 md:grid-cols-3">
 			<article className="flex flex-col bg-darkwhite3">
 				<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-					<img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src="https://source.unsplash.com/200x200/?men?1" />
+					<img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src="" />
 				</a>
 				<div className="flex flex-col flex-1 p-6">
 					<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
@@ -25,7 +25,7 @@ const Blog = () => {
 			</article>
 			<article className="flex flex-col bg-darkwhite3">
 				<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-					<img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src="https://source.unsplash.com/200x200/?men?2" />
+					<img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src="" />
 				</a>
 				<div className="flex flex-col flex-1 p-6">
 					<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
@@ -40,7 +40,7 @@ const Blog = () => {
 			
 			<article className="flex flex-col bg-darkwhite3">
 				<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-					<img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src="https://source.unsplash.com/200x200/?men?3" />
+					<img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src="" />
 				</a>
 				<div className="flex flex-col flex-1 p-6">
 					<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
