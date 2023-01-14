@@ -2,17 +2,18 @@ import React from 'react';
 import Link from 'next/link';
 
 import { urlFor } from '../../lib/client';
+import Image from 'next/image';
 
 const Product = ({ product: { image, name, slug, price } }) => {
   return (
     <div className=''>
       <Link href={`/product/${slug.current}`}>
         <div className="product-card">
-          <img 
+          <Image 
             src={urlFor(image && image[0])}
             width={250}
             height={250}
-            className="product-image"
+            className="product-image" alt='product'
           />
           <p className="product-name">{name}</p>
           <p className="product-price">${price}/Month</p>
@@ -25,14 +26,3 @@ const Product = ({ product: { image, name, slug, price } }) => {
 }
 
 export default Product
-// import React from 'react'
-
-// const Product = () => {
-//   return (
-//     <div>
-//       pro
-//     </div>
-//   )
-// }
-
-// export default Product

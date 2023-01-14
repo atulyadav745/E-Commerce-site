@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Logo from '../../assets/shop.png'
 import Image from 'next/image';
 import Link from 'next/link';
-import Cart from './Cart';
-import { useStateContext } from '../context/StateContext';
+import Cart from './Cart.page';
+import { useStateContext } from '../context/StateContext.page';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 
@@ -73,8 +73,8 @@ const Navbar = () => {
   <div class="dropdown relative">
     <a class="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2" role="button"
       data-bs-toggle="dropdown" aria-expanded="false">
-      <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-full"
-        style={{height: '30px', width: '30px'}} alt="" loading="lazy" />
+      <Image src="" class="rounded-full"
+       height={30} width={30} alt="" loading="lazy" />
     </a>
   </div>
   </div>

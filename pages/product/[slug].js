@@ -3,10 +3,11 @@ import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-
 
 import { client, urlFor } from '../../lib/client';
 // import { Product } from '../../components';
-import Product from '../components/Product'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import { useStateContext } from '../context/StateContext';
+import Product from '../components/Product.page'
+import Navbar from '../components/Navbar.page'
+import Footer from '../components/Footer.page'
+import { useStateContext } from '../context/StateContext.page';
+import Image from 'next/image';
 
 const ProductDetails = ({ product, products }) => {
   const { image, name, details, price } = product;
@@ -25,15 +26,16 @@ const ProductDetails = ({ product, products }) => {
       <div className="product-detail-container">
         <div>
           <div className="image-container">
-            <img src={urlFor(image && image[index])} className="product-detail-image" />
+            <Image src={urlFor(image && image[index])} className="product-detail-image" alt='pic' height={200} width={200}/>
           </div>
           <div className="small-images-container">
             {image?.map((item, i) => (
-              <img
+              <Image
                 key={i}
                 src={urlFor(item)}
                 className={i === index ? 'small-image selected-image' : 'small-image'}
                 onMouseEnter={() => setIndex(i)}
+                alt='pic' height={200} width={200}
               />
             ))}
           </div>
