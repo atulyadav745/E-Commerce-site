@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Logo from '../assets/shop.png'
+import Avatar from '../assets/avatar.avif'
 import Image from 'next/image';
 import Link from 'next/link';
 import Cart from './Cart.page';
@@ -73,8 +74,7 @@ const Navbar = () => {
   <div class="dropdown relative">
     <a class="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2" role="button"
       data-bs-toggle="dropdown" aria-expanded="false">
-      <Image src="" class="rounded-full"
-       height={30} width={30} alt="" loading="lazy" />
+      <Image class="rounded-full border-gray border-2" src={Avatar} alt="" loading="lazy" height={25}/>
     </a>
   </div>
   </div>
