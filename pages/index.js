@@ -10,7 +10,7 @@ const Home = ({ products }) => (
     <Hero />
     <div className="products-heading" id='products'>
       <h2>Best Seller Products</h2>
-      <p>speaker There are many variations passages</p>
+      <p>There are many variations passages</p>
     </div>
 
     <div className="products-container">
