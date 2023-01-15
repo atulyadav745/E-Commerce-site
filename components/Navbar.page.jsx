@@ -10,7 +10,7 @@ import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 // import IonIcon from '@reacticons/ionicons';
 const Navbar = () => {
-  const {showCart, setShowCart} = useStateContext();
+  const {showCart, setShowCart, totalQuantities} = useStateContext();
   return (
     <nav className="bg-white z-10 text-gray text-[18px]  sticky top-0">
       <div className="flex items-center font-medium justify-between">
@@ -49,10 +49,12 @@ const Navbar = () => {
     {/* </div> */}
 </div>
   {/* <!-- Icon --> */}
-  <button type='button' onClick={() =>setShowCart(true)} className='pr-3 '> <AiOutlineShoppingCart className='scale-125'/></button>
+  <button type='button' onClick={() =>setShowCart(true)} className='pr-3 '> <AiOutlineShoppingCart className='scale-125 mr-3'/>
+  <span class="text-white bg-blue absolute rounded-full text-xs -mt-2.5 py-0 px-1.5">{totalQuantities}</span>
+  </button>
   {showCart && <Cart/>}
 
-  <div class="dropdown relative">
+  {/* <div class="dropdown relative">
     <a class="
           text-gray-500
           hover:text-gray-700
@@ -70,7 +72,7 @@ const Navbar = () => {
       </svg>
       <span class="text-white bg-blue absolute rounded-full text-xs -mt-2.5 ml-2 py-0 px-1.5">1</span>
     </a>
-  </div>
+  </div> */}
   <div class="dropdown relative">
     <a class="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2" role="button"
       data-bs-toggle="dropdown" aria-expanded="false">
