@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../../assets/shop.png'
+import Logo from '../assets/shop.png'
 import Image from 'next/image';
 import Link from 'next/link';
 import Cart from './Cart.page';

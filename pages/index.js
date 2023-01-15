@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { client } from '../lib/client';
-import { Blog,Newsletter,Cart,  Navbar,Trending, Winter,Product, Testimonial,   Hero, Footer, Sponsors} from './components'
+import { Blog,Newsletter,Cart,  Navbar,Trending, Winter,Product, Testimonial,   Hero, Footer, Sponsors} from '../components'
 
 const Home = ({ products }) => (
   <div>

@@ -5,7 +5,7 @@ import { TiDeleteOutline } from 'react-icons/ti';
 import toast from 'react-hot-toast';
 
 import { useStateContext } from '../context/StateContext.page';
-import { urlFor } from '../../lib/client';
+import { urlFor } from '../lib/client';
 import Image from 'next/image';
 // import getStripe from '../lib/getStripe';
 

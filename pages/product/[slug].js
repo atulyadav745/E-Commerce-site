@@ -3,10 +3,10 @@ import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-
 
 import { client, urlFor } from '../../lib/client';
 // import { Product } from '../../components';
-import Product from '../components/Product.page'
-import Navbar from '../components/Navbar.page'
-import Footer from '../components/Footer.page'
-import { useStateContext } from '../context/StateContext.page';
+import Product from '../../components/Product.page'
+import Navbar from '../../components/Navbar.page'
+import Footer from '../../components/Footer.page'
+import { useStateContext } from '../../context/StateContext.page';
 import Image from 'next/image';
 
 const ProductDetails = ({ product, products }) => {
