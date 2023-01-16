@@ -28,11 +28,11 @@ const Blog = () => {
 				</div>
 			</article>
 			<article className="flex flex-col bg-darkwhite3">
-				<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+				<a rel="noopener noreferrer" href="https://www.apetogentleman.com/mens-outdoor-clothing/" aria-label="Te nulla oportere reprimique his dolorum">
 					<Image alt="" className="object-cover w-full h-full dark:bg-gray-500" src={men2} />
 				</a>
 				<div className="flex flex-col flex-1 p-6">
-					<a rel="noopener noreferrer" href="https://www.apetogentleman.com/mens-outdoor-clothing/" aria-label="Te nulla oportere reprimique his dolorum"></a>
+					<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
 					<a rel="noopener noreferrer" href="#" className="text-xs tracking-wider uppercase hover:underline  dark:text-black font-bold">Convenire</a>
 					<h3 className="flex-1 py-2 text-lg font-semibold leading-snug">The best fashion sartorial inspiration</h3>
 					<div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-400">
@@ -43,11 +43,11 @@ const Blog = () => {
 			</article>
 			
 			<article className="flex flex-col bg-darkwhite3">
-				<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+				<a rel="noopener noreferrer" href="https://www.apetogentleman.com/best-winter-coats-men/" aria-label="Te nulla oportere reprimique his dolorum">
 					<Image alt="" className="object-cover w-full dark:bg-gray-500 h-full" src={men3}/>
 				</a>
 				<div className="flex flex-col flex-1 p-6">
-					<a rel="noopener noreferrer" href="https://www.apetogentleman.com/best-winter-coats-men/" aria-label="Te nulla oportere reprimique his dolorum"></a>
+					<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
 					<a rel="noopener noreferrer" href="#" className="text-xs tracking-wider uppercase hover:underline dark:text-black font-bold">Convenire</a>
 					<h3 className="flex-1 py-2 text-lg font-semibold leading-snug">The best fashion sartorial inspiration</h3>
 					<div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-400">
