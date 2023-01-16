@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import men1 from '../assets/men1.avif'
-import men2 from '../assets/men2.avif'
-import men3 from '../assets/men3.avif'
+import men1 from '../assets/men1.png'
+import men2 from '../assets/men2.png'
+import men3 from '../assets/men3.png'
 
 const Blog = () => {
   return (

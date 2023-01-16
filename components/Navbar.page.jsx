@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Logo from '../assets/shop.png'
-import Avatar from '../assets/avatar.avif'
+import Avatar from '../assets/avatar.png'
 import Image from 'next/image';
 import Link from 'next/link';
 import Cart from './Cart.page';
