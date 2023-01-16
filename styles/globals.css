@@ -80,7 +80,7 @@ span.text-red {
   color: #324d67;
 }
 .product-card:hover {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.06, 1.06);
 }
 .product-image {
   border-radius: 15px;
@@ -504,10 +504,10 @@ span.text-red {
   .total h3 {
     font-size: 20px;
   }
-  .track {
+  /* .track {
     animation: marquee 10s linear infinite;
-    width: 550%;
-  }
+    width: 500%;
+  } */
   .success-wrapper,
   .cancel-wrapper {
     min-height: 69vh;
@@ -549,3 +549,8 @@ body {
 .cart-container {
   height: 100%;
 }
+.track {
+  animation: marquee 15s linear infinite;
+  width: 3120px;
+}
+

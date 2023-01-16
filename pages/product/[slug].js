@@ -25,8 +25,8 @@ const ProductDetails = ({ product, products }) => {
       <Navbar/>
       <div className="product-detail-container">
         <div>
-          <div className="image-container">
-            <img src={urlFor(image && image[index])} className="product-detail-image" alt='pic' />
+          <div className="image-container  h-[400px] w-[300px]">
+            <img src={urlFor(image && image[index])} className="product-detail-image " alt='pic' />
           </div>
           <div className="small-images-container">
             {image?.map((item, i) => (
