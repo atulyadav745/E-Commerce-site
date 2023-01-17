@@ -4,6 +4,8 @@ export {default as Footer} from './Footer.page';
 export {default as Hero} from './Hero.page';
 export {default as Navbar} from './Navbar.page';
 export {default as Newsletter} from './Newsletter.page';
+export {default as Newsletter1} from './Newsletter';
+export {default as Loading} from './Loading';
 export {default as Product} from './Product.page';
 export {default as Sponsors} from './Sponsors.page';
 export {default as Testimonial} from './Testimonial.page';

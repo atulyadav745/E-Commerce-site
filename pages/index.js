@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { client } from '../lib/client';
-import { Blog,Newsletter,Cart,  Navbar,Trending, Winter,Product, Testimonial,   Hero, Footer, Sponsors} from '../components'
+import { Blog,Newsletter,Cart,  Navbar,Trending, Winter,Product, Testimonial,   Hero, Footer, Sponsors, Newsletter1, Loading} from '../components'
 
 const Home = ({ products }) => (
   <div>
@@ -17,7 +17,7 @@ const Home = ({ products }) => (
       {products?.map((product) => <Product key={product._id} product={product} />)}
     </div>
     <Blog/>
-    <Newsletter/>
+    <Newsletter1/>
     <Sponsors/>
     <Footer />
   </div>
