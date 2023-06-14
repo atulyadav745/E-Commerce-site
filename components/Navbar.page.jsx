@@ -6,10 +6,14 @@ import Link from 'next/link';
 import Cart from './Cart.page';
 import { useStateContext } from '../context/StateContext.page';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
+import { useAuth0 } from "@auth0/auth0-react";
 
 
 // import IonIcon from '@reacticons/ionicons';
 const Navbar = () => {
+  const { loginWithRedirect } = useAuth0();
+  const { logout } = useAuth0();
+  const { user, isAuthenticated, isLoading } = useAuth0();
   const {showCart, setShowCart, totalQuantities} = useStateContext();
   return (
     <nav className="bg-white z-10 text-gray text-[18px]  sticky top-0">
@@ -39,15 +43,28 @@ const Navbar = () => {
               Blog
             </Link>
           </li>
+          {
+            isAuthenticated ? (
+              <li>
+              <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+          Log Out
+        </button>
+              </li>
+            ) : ( <li>
+              <button onClick={() => loginWithRedirect()}>Log In</button>
+              </li>
+              )
+          }
+         
          
         </ul>
         <div class="flex items-center relative mr-2">
         
   {/* <div class="xl:w-96 mr-3"> */}
-    <div class="input-group hidden relative md:flex flex-wrap items-stretch w-[200px] xl:w-[300px] mr-3">
+    {/* <div class="input-group hidden relative md:flex flex-wrap items-stretch w-[200px] xl:w-[300px] mr-3">
       <input type="search" class="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="Search..." aria-label="Search" aria-describedby="button-addon2"/>
-    {/* </div> */}
-</div>
+    
+</div> */}
   {/* <!-- Icon --> */}
   <button type='button' onClick={() =>setShowCart(true)} className='pr-3 '> <AiOutlineShoppingCart className='scale-125 mr-3'/>
   <span class="text-white bg-blue absolute rounded-full text-xs -mt-2.5 py-0 px-1.5">{totalQuantities}</span>
@@ -73,12 +90,14 @@ const Navbar = () => {
       <span class="text-white bg-blue absolute rounded-full text-xs -mt-2.5 ml-2 py-0 px-1.5">1</span>
     </a>
   </div> */}
-  <div class="dropdown relative">
+ { isAuthenticated && 
+ (<div class="dropdown relative">
     <a class="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2" role="button"
       data-bs-toggle="dropdown" aria-expanded="false">
-      <Image class="rounded-full border-gray border-2" src={Avatar} alt="" loading="lazy" height={25}/>
+      <Image class="rounded-full border-gray border-2" src={user.picture} alt={user.name} loading="lazy" height={35} width={35}/>
     </a>
-  </div>
+  </div>)
+  }
   </div>
   
       </div>
