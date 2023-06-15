@@ -7,6 +7,7 @@ const nextConfig = {
 module.exports = {
   images: {
     domains: ['s.gravatar.com'],
+    domains: ['lh3.googleusercontent.com'],
   },
 };
 
